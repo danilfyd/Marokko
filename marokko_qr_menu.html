@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17130f">
+<title>MAROKKO — Меню</title>
+<style>
+:root{--bg:#eee6d8;--card:#f7f1e7;--ink:#17130f;--muted:#71695f;--accent:#a94d34;--line:#9d9589}
+*{box-sizing:border-box}body{margin:0;background:#17130f;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.page{max-width:720px;margin:auto;background:var(--bg);min-height:100vh;padding:28px 18px 50px}
+.hero{text-align:center;padding:10px 0 28px;border-bottom:1px solid var(--line)}
+.logo{font-family:Georgia,serif;font-weight:900;font-size:64px;letter-spacing:4px;line-height:.85}
+.subtitle{font-family:Georgia,serif;font-style:italic;color:var(--accent);font-size:25px;margin-top:10px}
+.langs{display:flex;gap:8px;justify-content:center;margin-top:20px}
+.langs button{border:1px solid var(--ink);background:transparent;padding:8px 14px;border-radius:20px;font-weight:700}
+.langs button.active{background:var(--ink);color:white}
+.section{margin-top:28px}.section h2{font-family:Georgia,serif;font-size:27px;margin:0 0 14px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.item{padding:13px 0;border-bottom:1px solid rgba(157,149,137,.45)}.top{display:flex;justify-content:space-between;gap:15px}.name{font-size:18px;font-weight:700}.price{font-size:18px;font-weight:700;white-space:nowrap}.desc{font-size:14px;color:var(--muted);line-height:1.35;margin-top:5px}.weight{font-size:12px;color:var(--muted);font-weight:400;margin-left:5px}
+.reco{background:var(--ink);color:#fff;padding:11px 14px;font-size:20px;margin:24px 0 2px}.footer{margin-top:32px;text-align:center;font-size:13px;color:var(--muted);line-height:1.5}.note{border:1px solid var(--accent);padding:14px;margin-top:24px;font-size:14px;line-height:1.4}
+.hidden{display:none}@media(min-width:650px){.columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}.logo{font-size:76px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="hero">
+  <div class="logo">MAROKKO</div>
+  <div class="subtitle">вьетнамский ресторан · nhà hàng Việt Nam</div>
+  <div class="langs"><button class="active" onclick="setLang('ru')">RU</button><button onclick="setLang('vi')">VI</button></div>
+</header>
+
+<div id="ru">
+<section class="section"><h2>Холодные закуски</h2>
+<div class="item"><div class="top"><div class="name">Форель шеф-посола <span class="weight">120 г</span></div><div class="price">850.000 ₫</div></div><div class="desc">Форель, чипсы тортилья, творожный сыр, лимон</div></div>
+<div class="item"><div class="top"><div class="name">Мясная тарелка <span class="weight">230 г</span></div><div class="price">950.000 ₫</div></div><div class="desc">Ростбиф, бекон, куриное филе, горчица, салями, чипсы тортилья</div></div>
+<div class="item"><div class="top"><div class="name">Сырная тарелка <span class="weight">300 г</span></div><div class="price">850.000 ₫</div></div><div class="desc">Дор блю, пармезан, фета, творожный сыр, мёд, виноград, грецкий орех</div></div>
+<div class="item"><div class="top"><div class="name">Фруктовая <span class="weight">500 г</span></div><div class="price">800.000 ₫</div></div><div class="desc">Сезонные фрукты</div></div>
+<div class="item"><div class="top"><div class="name">Овощная тарелка <span class="weight">300 г</span></div><div class="price">420.000 ₫</div></div><div class="desc">Перец болгарский, огурец, помидор, дайкон, зелень</div></div>
+<div class="item"><div class="top"><div class="name">Соленья <span class="weight">350 г</span></div><div class="price">420.000 ₫</div></div><div class="desc">Помидор маринованный, огурец маринованный, огурец малосольный, капуста квашеная, брусника</div></div>
+<div class="item"><div class="top"><div class="name">Тортилья с лососем <span class="weight">190 г</span></div><div class="price">499.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Тортилья с курицей <span class="weight">190 г</span></div><div class="price">459.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Рулетики из лосося с пухом из пармезана <span class="weight">4 шт</span></div><div class="price">950.000 ₫</div></div></div>
+</section>
+
+<section class="section"><h2>Горячие закуски</h2>
+<div class="item"><div class="top"><div class="name">Хрустящие баклажаны <span class="weight">200 г</span></div><div class="price">389.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Креветки в панировке <span class="weight">150 г</span></div><div class="price">700.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Рулетики из баклажанов <span class="weight">5 шт</span></div><div class="price">599.000 ₫</div></div></div>
+</section>
+
+<section class="section"><h2>Салаты</h2>
+<div class="item"><div class="top"><div class="name">Греческий <span class="weight">200 г</span></div><div class="price">480.000 ₫</div></div><div class="desc">Лист салата, помидор, перец болгарский, огурец, сыр творожный, маслины, заправка «греческая»</div></div>
+<div class="item"><div class="top"><div class="name">Цезарь с форелью <span class="weight">200 г</span></div><div class="price">710.000 ₫</div></div><div class="desc">Лист салата, форель, помидор, сухарики, сыр «пармезан», соус «цезарь»</div></div>
+<div class="item"><div class="top"><div class="name">Цезарь с креветкой <span class="weight">200 г</span></div><div class="price">690.000 ₫</div></div><div class="desc">Лист салата, креветки, помидор, сухарики, сыр «пармезан», соус «цезарь»</div></div>
+<div class="item"><div class="top"><div class="name">Цезарь с курицей <span class="weight">200 г</span></div><div class="price">650.000 ₫</div></div><div class="desc">Лист салата, курица, помидор, сухарики, сыр «пармезан», соус «цезарь»</div></div>
+<div class="item"><div class="top"><div class="name">Салат пикантный с говядиной <span class="weight">200 г</span></div><div class="price">640.000 ₫</div></div><div class="desc">Пекинская капуста, говядина, перец болгарский, пряный арахис с аджикой, огурец, соус сладкий чили, кунжутное масло</div></div>
+<div class="item"><div class="top"><div class="name">Салат с голландским соусом <span class="weight">200 г</span></div><div class="price">750.000 ₫</div></div><div class="desc">Лист салата, форель, огурец маринованный, картофель пай, вяленые томаты, соус голландский</div></div>
+<div class="item"><div class="top"><div class="name">Салат мясной <span class="weight">200 г</span></div><div class="price">650.000 ₫</div></div><div class="desc">Лист салата, свинина, куриное филе, огурец маринованный, помидор, соус фирменный, сыр пармезан</div></div>
+</section>
+
+<section class="section"><h2>Закуски</h2>
+<div class="item"><div class="top"><div class="name">Чесночные гренки</div><div class="price">240.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Картошка фри с сырным соусом</div><div class="price">290.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Луковые кольца со сметаной</div><div class="price">210.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Рататуй</div><div class="price">300.000 ₫</div></div></div>
+</section>
+
+<div class="reco">Рекомендуем</div>
+<section class="section">
+<div class="item"><div class="top"><div class="name">Котлеты из щуки</div><div class="price">760.000 ₫</div></div><div class="desc">Нежные котлетки из щуки подаются с пюре из тыквы и луковым кремом</div></div>
+<div class="item"><div class="top"><div class="name">Стейк из лосося</div><div class="price">990.000 ₫</div></div><div class="desc">Стейк из лосося на гриле с птитимом и сливочным соусом</div></div>
+<div class="item"><div class="top"><div class="name">Фаршированные перцы</div><div class="price">820.000 ₫</div></div><div class="desc">Перцы, фаршированные с рисом, говяжьим фаршем и чабрецом</div></div>
+<div class="item"><div class="top"><div class="name">Утиная ножка</div><div class="price">780.000 ₫</div></div><div class="desc">Утиная ножка конфи с пюре из цветной капусты и морковью гриль</div></div>
+</section>
+
+<section class="section"><h2>Основные блюда</h2>
+<div class="item"><div class="top"><div class="name">Жареная корюшка</div><div class="price">650.000 ₫</div></div><div class="desc">Жареная на углях корюшка подается со сметаной и картофелем айдахо</div></div>
+<div class="item"><div class="top"><div class="name">Фермерский цыпленок</div><div class="price">700.000 ₫</div></div><div class="desc">Цыпленок с домашним ткемали и свежими овощами</div></div>
+<div class="item"><div class="top"><div class="name">Жаркое из говядины</div><div class="price">780.000 ₫</div></div><div class="desc">Подается с жареной тыквой и чесночным соусом</div></div>
+<div class="item"><div class="top"><div class="name">Свиные ребра</div><div class="price">700.000 ₫</div></div><div class="desc">Свиные ребра гриль подаются с капустой</div></div>
+</section>
+
+<section class="section"><h2>Десерты</h2>
+<div class="item"><div class="top"><div class="name">Банана сплит</div><div class="price">350.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Классический чизкейк</div><div class="price">400.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Шоколадное мороженое</div><div class="price">260.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Фруктовый пирог</div><div class="price">290.000 ₫</div></div></div>
+</section>
+
+<section class="section"><h2>Напитки</h2>
+<div class="item"><div class="top"><div class="name">Американо</div><div class="price">130.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Капучино</div><div class="price">160.000 ₫ / 190.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Черный / зеленый чай</div><div class="price">170.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Боржоми</div><div class="price">130.000 ₫</div></div></div>
+</section>
+<div class="note">При заказе от 3.500.000 ₫ на одного человека по меню можно принести свой алкоголь.</div>
+</div>
+
+<div id="vi" class="hidden">
+<!-- Vietnamese version: names translated while retaining original menu prices -->
+<section class="section"><h2>Món khai vị lạnh</h2>
+<div class="item"><div class="top"><div class="name">Cá hồi vân ướp muối kiểu đầu bếp <span class="weight">120 g</span></div><div class="price">850.000 ₫</div></div><div class="desc">Cá hồi vân, bánh tortilla giòn, phô mai kem, chanh</div></div>
+<div class="item"><div class="top"><div class="name">Đĩa thịt nguội <span class="weight">230 g</span></div><div class="price">950.000 ₫</div></div><div class="desc">Bò nướng nguội, thịt xông khói, phi lê gà, mù tạt, salami, tortilla giòn</div></div>
+<div class="item"><div class="top"><div class="name">Đĩa phô mai <span class="weight">300 g</span></div><div class="price">850.000 ₫</div></div><div class="desc">Phô mai xanh, parmesan, feta, phô mai kem, mật ong, nho, óc chó</div></div>
+<div class="item"><div class="top"><div class="name">Đĩa trái cây <span class="weight">500 g</span></div><div class="price">800.000 ₫</div></div><div class="desc">Trái cây theo mùa</div></div>
+<div class="item"><div class="top"><div class="name">Đĩa rau củ <span class="weight">300 g</span></div><div class="price">420.000 ₫</div></div><div class="desc">Ớt chuông, dưa chuột, cà chua, củ cải trắng, rau xanh</div></div>
+<div class="item"><div class="top"><div class="name">Rau củ muối <span class="weight">350 g</span></div><div class="price">420.000 ₫</div></div><div class="desc">Cà chua ngâm, dưa chuột ngâm, dưa chuột muối nhẹ, bắp cải muối, nam việt quất</div></div>
+<div class="item"><div class="top"><div class="name">Tortilla cá hồi <span class="weight">190 g</span></div><div class="price">499.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Tortilla gà <span class="weight">190 g</span></div><div class="price">459.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Cuộn cá hồi với bọt parmesan <span class="weight">4 cái</span></div><div class="price">950.000 ₫</div></div></div>
+</section>
+<section class="section"><h2>Món khai vị nóng</h2>
+<div class="item"><div class="top"><div class="name">Cà tím giòn <span class="weight">200 g</span></div><div class="price">389.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Tôm chiên xù <span class="weight">150 g</span></div><div class="price">700.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Cuộn cà tím <span class="weight">5 cái</span></div><div class="price">599.000 ₫</div></div></div>
+</section>
+<section class="section"><h2>Salad</h2>
+<div class="item"><div class="top"><div class="name">Salad Hy Lạp <span class="weight">200 g</span></div><div class="price">480.000 ₫</div></div><div class="desc">Xà lách, cà chua, ớt chuông, dưa chuột, phô mai kem, ô liu, sốt Hy Lạp</div></div>
+<div class="item"><div class="top"><div class="name">Caesar cá hồi <span class="weight">200 g</span></div><div class="price">710.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Caesar tôm <span class="weight">200 g</span></div><div class="price">690.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Caesar gà <span class="weight">200 g</span></div><div class="price">650.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Salad bò cay <span class="weight">200 g</span></div><div class="price">640.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Salad sốt Hà Lan <span class="weight">200 g</span></div><div class="price">750.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Salad thịt <span class="weight">200 g</span></div><div class="price">650.000 ₫</div></div></div>
+</section>
+<section class="section"><h2>Đồ ăn nhẹ</h2>
+<div class="item"><div class="top"><div class="name">Bánh mì nướng tỏi</div><div class="price">240.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Khoai tây chiên sốt phô mai</div><div class="price">290.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Hành tây chiên với kem chua</div><div class="price">210.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Ratatouille</div><div class="price">300.000 ₫</div></div></div>
+</section>
+<div class="reco">Đề xuất của đầu bếp</div>
+<section class="section">
+<div class="item"><div class="top"><div class="name">Chả cá pike</div><div class="price">760.000 ₫</div></div><div class="desc">Chả cá pike mềm, dùng với khoai bí đỏ nghiền và kem hành</div></div>
+<div class="item"><div class="top"><div class="name">Steak cá hồi</div><div class="price">990.000 ₫</div></div><div class="desc">Cá hồi nướng với pasta ptitim và sốt kem</div></div>
+<div class="item"><div class="top"><div class="name">Ớt chuông nhồi thịt</div><div class="price">820.000 ₫</div></div><div class="desc">Ớt chuông nhồi cơm, thịt bò xay và húng tây</div></div>
+<div class="item"><div class="top"><div class="name">Đùi vịt confit</div><div class="price">780.000 ₫</div></div><div class="desc">Đùi vịt confit với súp lơ nghiền và cà rốt nướng</div></div>
+</section>
+<section class="section"><h2>Món chính</h2>
+<div class="item"><div class="top"><div class="name">Cá smelt chiên</div><div class="price">650.000 ₫</div></div><div class="desc">Cá smelt nướng than, dùng với kem chua và khoai tây Idaho</div></div>
+<div class="item"><div class="top"><div class="name">Gà nông trại</div><div class="price">700.000 ₫</div></div><div class="desc">Gà dùng với sốt tkemali nhà làm và rau củ tươi</div></div>
+<div class="item"><div class="top"><div class="name">Bò hầm kiểu nhà</div><div class="price">780.000 ₫</div></div><div class="desc">Dùng với bí đỏ chiên và sốt tỏi</div></div>
+<div class="item"><div class="top"><div class="name">Sườn heo</div><div class="price">700.000 ₫</div></div><div class="desc">Sườn heo nướng dùng với bắp cải</div></div>
+</section>
+<section class="section"><h2>Tráng miệng</h2>
+<div class="item"><div class="top"><div class="name">Banana split</div><div class="price">350.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Cheesecake cổ điển</div><div class="price">400.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Kem sô cô la</div><div class="price">260.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Bánh trái cây</div><div class="price">290.000 ₫</div></div></div>
+</section>
+<section class="section"><h2>Đồ uống</h2>
+<div class="item"><div class="top"><div class="name">Americano</div><div class="price">130.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Cappuccino</div><div class="price">160.000 ₫ / 190.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Trà đen / trà xanh</div><div class="price">170.000 ₫</div></div></div>
+<div class="item"><div class="top"><div class="name">Borjomi</div><div class="price">130.000 ₫</div></div></div>
+</section>
+<div class="note">Với đơn từ 3.500.000 ₫/người theo thực đơn, quý khách có thể mang đồ uống có cồn của mình.</div>
+</div>
+<footer class="footer">MAROKKO · Nhà hàng Việt Nam<br>Biệt Thự, 28 · Nha Trang<br>Menu điện tử · QR MENU</footer>
+</div>
+<script>
+function setLang(l){
+ document.getElementById('ru').classList.toggle('hidden',l!=='ru');
+ document.getElementById('vi').classList.toggle('hidden',l!=='vi');
+ document.querySelectorAll('.langs button').forEach((b,i)=>b.classList.toggle('active',(i===0&&l==='ru')||(i===1&&l==='vi')));
+ document.documentElement.lang=l;
+}
+</script>
+</body></html>
